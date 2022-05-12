@@ -1,3 +1,5 @@
+import json
+from pathlib import Path
 from typing import Dict
 
 
@@ -5,6 +7,10 @@ class Translator:
 
     def __init__(self, dictionary: Dict) -> None:
         self.__dictionary: Dict = dictionary
+
+    @classmethod
+    def from_json_file(cls, path: str):
+        return cls(json.loads(Path(path).read_text()))
 
     def set_dictionary(self, dictionary: Dict):
         self.__dictionary = dictionary
