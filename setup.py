@@ -1,9 +1,10 @@
 import os
 
 import setuptools
+
 setuptools.setup(
     name="backbone-translation",
-    version=os.environ['CI_COMMIT_TAG'],
+    version=os.environ.get('CI_COMMIT_TAG'),
     author="Mojtabaa Habibain",
     author_email="mojtabaa.hn@gmail.com",
     description="Python Utilities & Basalam Micro-Services SDK",
