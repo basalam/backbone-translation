@@ -15,6 +15,9 @@ class Translator:
     def set_dictionary(self, dictionary: Dict):
         self.__dictionary = dictionary
 
+    def exists(self, phrase: str) -> bool:
+        return self.__dictionary.get(phrase) is not None
+
     def translate(self, phrase: str, **kwargs):
         translation: str = self.__dictionary.get(phrase) if phrase in self.__dictionary else phrase
         return translation if len(kwargs) == 0 else translation.format(**kwargs)
