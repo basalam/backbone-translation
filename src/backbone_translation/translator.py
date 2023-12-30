@@ -10,7 +10,7 @@ class Translator:
 
     @classmethod
     def from_json_file(cls, path: str):
-        return cls(json.loads(Path(path).read_text()))
+        return cls(json.loads(Path(path).read_text(encoding='utf8')))
 
     def set_dictionary(self, dictionary: Dict):
         self._dictionary = dictionary
