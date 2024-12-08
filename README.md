@@ -5,7 +5,7 @@
 #### Installation & Upgrade
 
 ```shell
-pip install backbone-translation
+pip install basalam.backbone-translation
 ```
 
 #### Usage
