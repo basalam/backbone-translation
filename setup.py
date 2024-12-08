@@ -1,7 +1,7 @@
 from setuptools import setup, find_namespace_packages
 
 setup(
-    name="backbone-translation",
+    name="basalam.backbone-translation",
     author="Mojtabaa Habibain",
     author_email="mojtabaa.hn@gmail.com",
     description="Python Utilities & Basalam Micro-Services SDK",
